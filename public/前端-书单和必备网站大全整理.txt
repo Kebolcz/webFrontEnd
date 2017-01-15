@@ -1,0 +1,30 @@
+1、前端书单：
+必备：
+《JavaScript Dom 编程艺术》：入门好书。
+《JavaScript权威指南》：Javascript圣经，前端必备；前端程序员学习核心JavaScript语言和由Web浏览器定义的JavaScript API的指南和综合参考手册；
+《HTML5与CSS3权威指南》 ：html5和css3入级好书；详尽讲解了HTML5与CSS 3的所有功能和特性；
+
+其他&进阶：
+1.《javascript高级程序设计》这是web开发的三大圣典之一，必读
+2.《高性能javascript》
+3.《javascript设计模式》
+4.《DOM编程》
+4.《高性能网站建设指南》
+5.《css权威指南》
+6.《css禅意花园》
+
+http://www.xuanfengge.com/fe-books.html
+http://bbs.qietu.cn/thread-15089-1-1.html
+http://www.cnblogs.com/Darren_code/archive/2011/06/29/javascript-learn.html
+
+
+2、大前端必备网站大全整理
+纯干货！大前端必备网站-超全（上）
+http://jiuye.jikexueyuan.com/topic/440
+纯干货！大前端必备网站-超全（下）
+http://jiuye.jikexueyuan.com/topic/441
+
+
+3、Sublime Text3 及其 插件安装和使用
+http://jiuye.jikexueyuan.com/topic/483
+
