@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>H5改良的input元素</title>
+    <style type="text/css">
+    /*form .search {
+            color: #ccc;
+        }*/
+    
+    label.search {
+        color: #9c44db;
+    }
+    
+    a:link {
+        color: #ff0000;
+    }
+    
+    a:visited {
+        color: #00ff00;
+    }
+    
+    a:hover {
+        color: #ff00ff;
+    }
+    
+    a:active {
+        color: #0000ff
+    }
+    
+    a::before {
+        content: '\f04';
+        color: red
+    }
+    
+    a::after {
+        content: 'hello';
+        color: green
+    }
+    </style>
+    <link rel="stylesheet" type="text/css" href="./index.css">
+</head>
+
+<body>
+    <!-- <form id="form1">
+        <input type="text" />&ndash;&gt;
+        <input type="email" />
+        <input type="tel" />
+        <input type="url" />
+        <input type="color" />
+        <input type="date" />
+        <input type="datetime" />
+        <input type="datetime-local" />
+        <input type="number" required autofocus autocomplete="on" min="100" max="105" />
+        <input type="range" />
+        <input type="search" />
+        <input type="submit" value="提交" />
+    </form> -->
+    <form class="form" id="form1" action="http://www.baidu.com/s">
+        <table>
+            <tr>
+                <td>
+                    <label class="search" for="username">搜索:</label>
+                </td>
+                <td>
+                    <label class="date" for="username">2017/01/21</label>
+                </td>
+                <td>
+                    <input name="wd" type="text" required id="username">
+                </td>
+            </tr>
+        </table>
+    </form>
+    <input form="form1" type="submit" value="提交">
+    <a href="http://www.baidu.com" target="_blank">百度一下</a>
+</body>
+
+</html>
