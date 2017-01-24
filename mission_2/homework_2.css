@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #0D7792;
+}
+
+img {
+    width: 180px;
+    height: 76px;
+    border: none;
+    margin-left: 25px;
+}
+
+.warning {
+    color: #ff0000;
+}
+
+.notice {
+    color: #0000ff;
+}
+
+.wraper {
+    background-color: #FFFFFF;
+    width: 806px;
+    border-radius: 26px;
+    margin: 12px auto 12px;
+}
+
+.outer {
+    border: 1px solid #CCC;
+    border-collapse: collapse;
+    margin: 0 auto;
+    text-align: center;
+    width: 710px;
+}
+
+th,
+td {
+    border-right: 1px solid #CCC;
+    border-bottom: 1px solid #CCC;
+}
+
+.theader {
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 150%;
+    color: #003399;
+    text-align: left;
+    background-color: #EEEEEE;
+    padding-left: 10px;
+}
+
+.input {
+    display: -webkit-flex;
+}
+
+.area {
+    padding: 2px 0px 2px;
+    box-sizing: border-box;
+    width: 402px;
+    height: 97px;
+    line-height: 150%;
+}
+
+.innerTab {
+	width: 100%;
+}
+.innertab td{
+	border: none !important;
+}
+.innertab label {
+	font-size: 12px;
+	line-height: 150%;
+}
+.innertab input {
+	margin: 3px 3px 3px 4px;
+	vertical-align: middle;
+}
+.tdright input {
+	vertical-align: middle;
+}
+.tdleft {
+    font-size: 12px;
+    line-height: 150%;
+    text-align: right;
+    -webkit-flex: 1;
+    /*方法I:旧伸缩盒*/
+    display: -webkit-box;
+    /*子元素从结束位置对齐*/
+    -webkit-box-pack: end;
+    /*子元素居中对齐*/
+    -webkit-box-align: center;
+    
+    /*方法II:新伸缩盒*/
+    /*display: -webkit-flex;
+	align-items: center;
+	justify-content: flex-end;*/
+}
+.subBtn {
+	height: 84px;
+}
+button {
+	width: 83px;
+	height: 21px;
+}
+.tdright {
+    font-size: 12px;
+    line-height: 150%;
+    text-align: left;
+    -webkit-flex: 3;
+}
+footer {
+	text-align: center;
+	font-size: 12px;
+	line-height: 150%;
+}
+#copyright {
+	color: #666666;
+}
+caption {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.logo {
+    display: inline-block;
+}
+
+th {
+    font-size: 12px;
+    line-height: 150%;
+    font-weight: normal;
+}
+
+content {
+    background-color: #FFFFFF;
+    width: 710px;
+}
+
+header {
+    position: relative;
+}
+
+header .btn {
+    position: absolute;
+    bottom: 0;
+    right: 20px;
+}
+
+header .btn a {
+    color: #FF0099;
+    font-size: 12px;
+    line-height: 150%;
+}

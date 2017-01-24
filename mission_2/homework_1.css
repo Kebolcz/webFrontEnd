@@ -1,0 +1,42 @@
+//question1:单独设置div高和宽都是100%,不能撑开div,只有html和body同时设置为100%,才行,为什么?
+html,body,.container{
+	position: relative;
+	height: 100%;
+	width: 100%;
+}
+.container div {
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+}
+#top,#right,#buttom,#left,img {
+	box-shadow: 1px 1px 4px 1.5px rgba(0, 0, 0, .6);
+}
+#top {
+	background-color: #316B96;
+	margin-top: -152px;
+	margin-left: -50px;
+}
+#right {
+	background-color: #329D35;
+	margin-top: -50px;
+	margin-left: 52px;
+}
+#buttom {
+	background-color: #871A29;
+	margin-top: 52px;
+	margin-left: -50px;
+}
+#left {
+	background-color: #552773;
+	margin-top: -50px;
+	margin-left: -152px;
+}
+img {
+	margin-top: -50px;
+	margin-left: -50px;
+    width: 100px;
+    height: 100px;
+}

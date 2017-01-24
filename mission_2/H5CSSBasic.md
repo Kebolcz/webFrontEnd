@@ -1,4 +1,4 @@
-## H5改良的input元素和CSS基础及选择器  
+\## H5改良的input元素和CSS基础及选择器  
 - ## 1.H5改良的input元素 ###  
 > H5在各浏览器中支持效果不一样,只能选择能用的用.
 ```
@@ -16,7 +16,7 @@
     <input type="search" />
     <input type="submit" value="提交" />
 </form>
-    ```
+```
     
 - ## 2.CSS基础  ###  
 - #### 2.1历史版本

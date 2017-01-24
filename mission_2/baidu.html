@@ -20,21 +20,41 @@
             <a href="http://v.baidu.com/" title="点击百度视频">视频</a>
             <a href="http://tieba.baidu.com/" title="点击百度贴吧">贴吧</a>
             <a href="https://passport.baidu.com/v2/?login&tpl=mn&u=http%3A%2F%2Fwww.baidu.com%2F" title="点击登录百度">登录</a>
-            <a href="http://www.baidu.com/gaoji/preferences.html" title="点击设置百度">设置</a>
-            <a href="http://www.baidu.com/more/" title="点击百度更多产品">更多产品</a>
+            <a href="http://www.baidu.com/gaoji/preferences.html" title="点击设置百度" class="config">设置</a>
+            <a href="http://www.baidu.com/more/" title="点击百度更多产品" class="more">更多产品</a>
+            <ul class="wrap">
+                <li>
+                    <ul class="first">
+                        <li><i></i></li>
+                        <li><a href="#">搜索设置</a></li>
+                        <li><a href="#">高级搜索</a></li>
+                        <li><a href="#">关闭预测</a></li>
+                        <li><a href="#">搜索历史</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <ul class="second">
+                        <li><a href="#">音乐</a></li>
+                        <li><a href="#">知道</a></li>
+                        <li><a href="#">文库</a></li>
+                        <li><a href="#">风云榜</a></li>
+                        <li><a href="#">全部产品</a></li>
+                    </ul>
+                </li>
+            </ul>
         </nav>
     </header>
     <!--end top-->
     <!--middle-->
-    <div id="content">
-        <p>
+    <div class="content">
+        <!-- <p> -->
             <img src="https://www.baidu.com/img/bd_logo1.png" alt="百度Log" width="270" height="129">
-        </p>
+        <!-- </p> -->
         <form action="http://www.baidu.com/s" method="get" target="_blank">
             <p>
-                <input type="text" name="wd" id="searchContent">
+                <input type="text" name="wd" class="searchContent">
                 <span class="camera"></span>
-                <input type="submit" value="百度一下" id="search">
+                <input type="submit" value="百度一下" class="search">
             </p>
         </form>
     </div>
@@ -54,13 +74,13 @@
             <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11000002000001">京公网安备11000002000001号</a>
         </p>
     </footer>
+    <!--end footer-->
     <script type="text/javascript">
     var tag = document.getElementsByTagName('a');
     for (var obj of tag) {
         obj.setAttribute('target', '_blank');
     }
     </script>
-    <!--end footer-->
 </body>
 
 </html>
