@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>弹性盒模型&column分栏&居中对齐</title>
+    <style type="text/css">
+    	.col {
+    		column-count: 4;
+    		-webkit-column-count: 4;
+    		-moz-column-count: 4;
+    		column-rule-style: groove;
+    		-webkit-column-rule-style:dotted;
+    		-moz-column-rule-style: groove;
+    	}
+		/*伸缩盒(Flexible Box)(旧)*/
+    	.becenter {
+    		height: 300px;
+    		width: 300px;
+    		background-color: #db002d;
+    		display: -webkit-box;
+    		-webkit-box-pack: center;
+    		-webkit-box-align: center;
+    	}
+    	/*伸缩盒(Flexible Box)(新)*/
+    	.becenter-x {
+    		height: 300px;
+    		width: 300px;
+    		background-color: #13258a;
+    		display: -webkit-flex;
+    		-webkit-justify-content: center;
+    		-webkit-align-items: center;
+    	}
+    </style>
+</head>
+
+<body>
+    <div class="col">
+        <img src="./img/1.jpg" width="200px">
+        <article>2016年岁末，习近平总书记在全国政协新年茶话会上，言简意明勾勒出过去一年全面深化改革持续强劲纵深推进的良好态势，充分肯定了一年来改革取得的成果。这一年，以习近平同志为核心的党中央，以“明知山有虎，偏向虎山行”的勇气大刀阔斧、攻坚克难，以“图难于其易，为大于其细”的智慧运筹帷幄、总揽全局，以“咬定青山不放松”的决心严明责任、狠抓落实，推动全面深化改革奋力前行，积厚成势。 　　全面深化改革，翻过一山又一山，快马加鞭未下鞍。2016年岁末，习近平总书记在全国政协新年茶话会上，言简意明勾勒出过去一年全面深化改革持续强劲纵深推进的良好态势，充分肯定了一年来改革取得的成果。这一年，以习近平同志为核心的党中央，以“明知山有虎，偏向虎山行”的勇气大刀阔斧、攻坚克难，以“图难于其易，为大于其细”的智慧运筹帷幄、总揽全局，以“咬定青山不放松”的决心严明责任、狠抓落实，推动全面深化改革奋力前行，积厚成势。 　　全面深化改革，翻过一山又一山，快马加鞭未下鞍。2016年岁末，习近平总书记在全国政协新年茶话会上，言简意明勾勒出过去一年全面深化改革持续强劲纵深推进的良好态势，充分肯定了一年来改革取得的成果。这一年，以习近平同志为核心的党中央，以“明知山有虎，偏向虎山行”的勇气大刀阔斧、攻坚克难，以“图难于其易，为大于其细”的智慧运筹帷幄、总揽全局，以“咬定青山不放松”的决心严明责任、狠抓落实，推动全面深化改革奋力前行，积厚成势。 　　全面深化改革，翻过一山又一山，快马加鞭未下鞍。
+        </article>
+    </div>
+    <hr>
+    <div class="becenter">
+    	<img src="./img/1.jpg" width="200px">
+    </div>
+    <hr>
+    <div class="becenter-x">
+    	<img src="./img/1.jpg" width="200px">
+    </div>
+</body>
+
+</html>

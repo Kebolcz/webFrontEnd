@@ -1,42 +1,129 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta charset="utf-8">
-	<title>flex box</title>
-	<style type="text/css">
-	.con {
-		/*
-		 * 请自行根据需要补全厂商前缀...
+    <meta charset="utf-8">
+    <title>弹性盒子水平、垂直分栏</title>
+    <style type="text/css">
+    .con_box {
+        /*
+		 * 请自行根据需要补全厂商前缀...-webkit,-moz
 		 * -webkit-flex起作用,外层容器必须display:-webkit-flex
 		 * display:-webkit-box时,容器内的contents直接平均排列,参照CSS8;
 		*/
-		display: -webkit-flex;
-		-webkit-flex-direction:column;
-		width: 600px;
-		background-color: grey;
-	}
-		.first {
-			height: 100px;
-			background-color: red;
-			-webkit-flex:1;
-		}
-		.second {
-			height: 100px;
-			background-color: orange;
-			-webkit-flex:1;
-		}
-		.third {
-			height: 200px;
-			background-color: blue;
-			-webkit-flex:1;
-		}
-	</style>
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        width: 600px;
+        height: 300px;
+        background-color: grey;
+    }
+    
+    .first_box {
+        /*height: 100px;*/
+        background-color: red;
+        -webkit-box-flex: 1;
+    }
+    
+    .second_box {
+        /*height: 100px;*/
+        background-color: orange;
+        -webkit-box-flex: 2;
+    }
+    
+    .third_box {
+        /*height: 200px;*/
+        background-color: blue;
+        -webkit-box-flex: 3;
+    }
+    
+    .con_flex {
+        /*
+		 * 请自行根据需要补全厂商前缀...-webkit,-moz
+		 * -webkit-flex起作用,外层容器必须display:-webkit-flex
+		 * display:-webkit-box时,容器内的contents直接平均排列,参照CSS88;
+		*/
+        display: -webkit-flex;
+        -webkit-flex-direction: row;
+        width: 600px;
+        background-color: grey;
+    }
+    
+    .first_flex {
+        height: 100px;
+        background-color: red;
+        -webkit-flex: 1;
+        order: 2;
+    }
+    
+    .second_flex {
+        height: 100px;
+        background-color: orange;
+        -webkit-flex: 2;
+        order: 3;
+    }
+    
+    .third_flex {
+        height: 200px;
+        background-color: blue;
+        -webkit-flex: 3;
+        order: 1;
+    }
+    
+    .con_mix {
+        /*
+		 * 请自行根据需要补全厂商前缀...-webkit,-moz
+		 * -webkit-flex起作用,外层容器必须display:-webkit-flex
+		 * display:-webkit-box时,容器内的contents直接平均排列,参照CSS88;
+		*/
+        display: -webkit-flex;
+        -webkit-flex-direction: row;
+        display: -webkit-box;
+        -webkit-box-orient: horizontal;
+        width: 600px;
+        background-color: grey;
+    }
+    
+    .first_mix {
+        height: 100px;
+        background-color: red;
+        -webkit-box-flex: 1;
+        -webkit-flex: 1;
+    }
+    
+    .second_mix {
+        height: 100px;
+        background-color: orange;
+        -webkit-box-flex: 2;
+        -webkit-flex: 2;
+    }
+    
+    .third_mix {
+        height: 200px;
+        background-color: blue;
+        -webkit-box-flex: 3;
+        -webkit-flex: 3;
+    }
+    </style>
 </head>
+
 <body>
-<div class="con">
-	<div class="first">NO.1</div>
-	<div class="second">NO.2</div>
-	<div class="third">NO.3</div>
-</div>
+    <div class="con_box">
+        <div class="first_box">NO.1_box</div>
+        <div class="second_box">NO.2_box</div>
+        <div class="third_box">NO.3_box</div>
+    </div>
+    <hr>
+    <div class="con_flex">
+        <div class="first_flex">NO.1_order</div>
+        <div class="second_flex">NO.2_order</div>
+        <div class="third_flex">NO.3_order</div>
+    </div>
+    <hr>
+    <div class="con_mix">
+        <div class="first_mix">NO.1_mix</div>
+        <div class="second_mix">NO.2_mix</div>
+        <div class="third_mix">NO.3_mix</div>
+    </div>
 </body>
+
 </html>

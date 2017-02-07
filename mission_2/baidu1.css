@@ -1,0 +1,276 @@
+html {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+body {
+    overflow-y: hidden;
+    min-width: 810px;
+    min-height: 600px;
+    position: relative;
+}
+
+header {
+    position: absolute;
+    right: 0;
+    top: 0;
+    text-align: right;
+    padding: 0 10px 0 0;
+    margin: 19px 0 5px;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+#content {
+    margin: 0 auto;
+    padding-top: 100px;
+    /*padding: 0 10px;*/
+    line-height: 2.4;
+}
+
+#content p {
+    position: relative;
+    width: 740px;
+    margin: 0 auto
+}
+
+a:link,
+a:visited,
+a:active {
+    color: #999;
+}
+
+a:hover {
+    color: #00c;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    margin: 0 auto;
+    color: #999;
+    font-size: 13px;
+    width: 100%;
+}
+
+footer a {
+    color: #999;
+    font-size: 13px;
+}
+
+form input {
+    vertical-align: bottom;
+}
+
+#searchContent {
+    margin: 0 -7.5px 0 0;
+    width: 540px;
+    height: 36px;
+    border: 1px solid #b6b6b6;
+    outline: 0;
+    text-indent: 10px;
+}
+
+#searchContent:hover {
+    border-color: #999;
+}
+
+#searchContent:focus {
+    border-color: #ccc;
+}
+
+#search {
+    width: 100px;
+    height: 40px;
+    background-color: #3385ff;
+    color: #fff;
+    border: 1px none;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.camera {
+    position: absolute;
+    right: 22%;
+    top: 50%;
+    margin-top: -8px;
+    height: 19px;
+    width: 18px;
+    background: #fff url(https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/soutu/img/camera_new_5606e8f.png) no-repeat;
+}
+
+.camera:hover {
+    background-position: 0 -20px;
+}
+
+
+/*以下为header的样式内容*/
+
+
+/*----------------------------------------------------------------------------------------------------*/
+
+/*请老师帮我看看这里的css样式,z-index设为999,为什么不能遮挡住上面的<i>标签,而且li在hover后,为什么字体颜色不能变化*/
+.first i {
+    width: 10px;
+    height: 10px;
+    font-size: 0;
+    line-height: 10px;
+    background-color: #fff;
+    /*display: block;*/
+    position: absolute;
+    border: 1px solid #ccc;
+    border-style: solid none none solid;
+    transform: rotate(45deg);
+    top: -6px;
+    left: 50%;
+    margin-left: -5px;
+}
+
+.first>li:not(:first-child) {
+    z-index: 999;
+    position: relative;
+}
+
+.config li:hover {
+    background-color: #3385FF;
+    color: red !important;
+}
+/*----------------------------------------------------------------------------------------------------*/
+.first {
+    position: absolute;
+    top: 30px;
+    right: 64px;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    background-color: #fff;
+    border: 1px solid #e4e4e4;
+    box-shadow: 1px 1px 5px #d1d1d1;
+    width: 75px;
+    height: 104px;
+    text-align: center;
+    display: none;
+}
+
+.first a {
+    margin: 0!important;
+    line-height: 26px;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+
+/*.first>a:first-child {
+    position: absolute;
+    top: -32px;
+    left: 24px;
+    color: #999;
+    font-weight: 700;
+}*/
+
+.config:hover>ul {
+    display: block;
+}
+
+
+
+.navlink {
+    display: inline-block;
+    margin-left: 13px;
+    line-height: 24px;
+}
+
+aside {
+    width: 74px;
+    border-left: 1px solid #e7e7e7;
+    position: absolute !important;
+    background-color: #f9f9f9;
+    z-index: 2;
+    right: 0;
+    top: -19px;
+    min-height: 740px;
+    display: none;
+}
+
+aside span {
+    width: 36px;
+    height: 36px;
+    display: block;
+    margin: 10px auto 5px;
+    background: url(https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/home/img/logos/bdbri_icons_0a62ce1.png) no-repeat;
+    cursor: pointer;
+}
+
+aside {
+    position: absolute;
+}
+
+aside>a:last-child {
+    font-weight: normal;
+    line-height: 76px;
+}
+
+aside a {
+    display: block;
+    text-align: center;
+    width: 66px;
+    height: 76px;
+    margin: 0 auto;
+    border-bottom: #f0f0f0 1px solid;
+    color: #666;
+    text-decoration: none;
+    overflow: hidden;
+}
+
+.more {
+    height: 23px;
+    width: 60px;
+    background-color: #38f;
+    display: inline-block;
+    text-align: center
+}
+
+.more>a {
+    color: #fff;
+}
+
+.more:hover>aside {
+    display: block;
+}
+
+.imgitem_1 {
+    width: 40px;
+    background-position: -72px 0;
+}
+
+.imgitem_2 {
+    background-position: -112px 0;
+}
+
+.imgitem_3 {
+    background-position: -36px 0;
+}
+
+.imgitem_4 {
+    background-position: -148px 0;
+}
+
+.imgitem_5 {
+    background-position: -184px 0;
+}
+
+.all {
+    margin-top: 15px;
+    height: 30px;
+    width: 85px;
+    overflow: hidden;
+}
+
+.recover {
+    font: 13px arial;
+    font-weight: 700;
+    position: relative;
+    top: 10px;
+}

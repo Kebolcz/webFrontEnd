@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>test</title>
+    <style type="text/css">
+    body {
+        padding: 0;
+        margin: 0;
+    }
+    
+    a {
+        text-decoration: none;
+        text-align: center;
+        display: block;
+    }
+    
+    a:link,
+    a:visited,
+    a:active {
+        color: #000;
+    }
+    
+    a:hover {
+        color: #004080;
+    }
+    
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    
+    .container {
+        margin-top: 20px;
+        height: 32px;
+        border-top: 2px solid #004080;
+        box-shadow: 0 2px 2px rgba(0, 0, 0, .2);
+        position: relative;
+    }
+    
+    .first {
+        display: inline-block;
+        width: 75px;
+        line-height: 32px;
+    }
+    
+    nav {
+        position: relative;
+        font-size: 0;
+        width: 800px;
+        margin: 0 auto;
+    }
+    
+    nav a {
+        font-size: 14px;
+    }
+    
+    nav:hover .wrap {
+        display: block;
+    }
+    
+    .wrap {
+        background: rgba(255, 255, 255, .95);
+        border: 1px solid #e4e4e4;
+        font-size: 0;
+        position: absolute;
+        padding: 0px 0 10px 75px;
+        width: 800px;
+        display: none;
+    }
+    
+    .wrap ul {
+        width: 75px;
+        line-height: 20px;
+    }
+    
+    .wrap>li {
+        display: inline-block;
+    }
+    
+    .one:hover~ul>li:nth-child(1) ul {
+        background: #eee;
+    }
+    
+    .two:hover~ul>li:nth-child(2) ul {
+        background: #eee;
+    }
+    
+    .three:hover~ul>li:nth-child(3) ul {
+        background: #eee;
+    }
+    
+    .four:hover~ul>li:nth-child(4) ul {
+        background: #eee;
+    }
+    
+    .second {
+        padding-top: 5px;
+        position: relative;
+    }
+    
+    .one:hover~ul>li:nth-child(1) ul::before {
+        content: "";
+        position: absolute;
+        top: -5px;
+        left: 32px;
+        width: 8px;
+        height: 8px;
+        border-left: 1px solid #eee;
+        border-top: 1px solid #eee;
+        background: #eee;
+        transform: rotate(45deg);
+    }
+    
+    .two:hover~ul>li:nth-child(2) ul::before {
+        content: "";
+        position: absolute;
+        top: -5px;
+        left: 32px;
+        width: 8px;
+        height: 8px;
+        border-left: 1px solid #eee;
+        border-top: 1px solid #eee;
+        background: #eee;
+        transform: rotate(45deg);
+    }
+    
+    .three:hover~ul>li:nth-child(3) ul::before {
+        content: "";
+        position: absolute;
+        top: -5px;
+        left: 32px;
+        width: 8px;
+        height: 8px;
+        border-left: 1px solid #eee;
+        border-top: 1px solid #eee;
+        background: #eee;
+        transform: rotate(45deg);
+    }
+    
+    .four:hover~ul>li:nth-child(4) ul::before {
+        content: "";
+        position: absolute;
+        top: -5px;
+        left: 32px;
+        width: 8px;
+        height: 8px;
+        border-left: 1px solid #eee;
+        border-top: 1px solid #eee;
+        background: #eee;
+        transform: rotate(45deg);
+    }
+    
+    .second:hover {
+        background: #eee;
+    }
+    
+    .second:hover::before {
+        content: "";
+        position: absolute;
+        top: -5px;
+        left: 32px;
+        width: 8px;
+        height: 8px;
+        border-left: 1px solid #eee;
+        border-top: 1px solid #eee;
+        background: #eee;
+        transform: rotate(45deg);
+    }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <a href="#" class="first">首页</a>
+            <a href="#" class="first one">分类页</a>
+            <a href="#" class="first two">分类页</a>
+            <a href="#" class="first three">分类页</a>
+            <a href="#" class="first four">分类页</a>
+            <ul class="wrap">
+                <li>
+                    <ul class="second">
+                        <li><a href="#">子菜单</a></li>
+                        <li><a href="#">子菜单</a></li>
+                        <li><a href="#">子菜单</a></li>
+                        <li><a href="#">子菜单</a></li>
+                        <li><a href="#">子菜单</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <ul class="second">
+                        <li><a href="#">子菜单</a></li>
+                        <li><a href="#">子菜单</a></li>
+                        <li><a href="#">子菜单</a></li>
+                        <li><a href="#">子菜单</a></li>
+                        <li><a href="#">子菜单</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <ul class="second">
+                        <li><a href="#">子菜单</a></li>
+                        <li><a href="#">子菜单</a></li>
+                        <li><a href="#">子菜单</a></li>
+                        <li><a href="#">子菜单</a></li>
+                        <li><a href="#">子菜单</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <ul class="second">
+                        <li><a href="#">子菜单</a></li>
+                        <li><a href="#">子菜单</a></li>
+                        <li><a href="#">子菜单</a></li>
+                        <li><a href="#">子菜单</a></li>
+                        <li><a href="#">子菜单</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+</body>
+
+</html>

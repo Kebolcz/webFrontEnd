@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>标准盒模型&怪异盒模型</title>
+    <style type="text/css">
+		.shoes {
+			width: 150px;
+			height: 150px;
+			background-color: #cdb4ce;
+			text-align: center;
+			line-height: 24px;
+			overflow: auto;
+		}
+
+		.shoesbox {
+			width:150px;
+			height:150px;
+			margin: 50px;
+			padding: 15px;
+			border:5px solid #1867b5;
+		}
+
+		.shoes-x {
+			width: 150px;
+			height: 150px;
+			background-color: #cdb4ce;
+			text-align: center;
+			line-height: 20px;
+			overflow: auto;
+		}
+
+		.shoesbox-x {
+			width:190px;
+			height:190px;
+			margin: 50px;
+			padding: 15px;
+			border:5px solid #1867b5;
+			box-sizing: border-box;
+		}
+    </style>
+</head>
+
+<body>
+    <div class="shoesbox">
+        <div class="shoes">
+            <strong>标准盒模型</strong>:外层盒子和内里填充宽高相同,剩下的padding和border自己适应,外层盒子会被撑开,多用于浏览器端.
+        </div>
+    </div>
+    <hr>
+    <div class="shoesbox-x">
+        <div class="shoes-x">
+            <strong>怪异盒模型</strong>:使用box-sizing:border-box,外层盒模型的宽高需要考虑padding和border的宽.先做盒子,不管content填充,多用于手机端.
+        </div>
+    </div>
+</body>
+
+</html>
