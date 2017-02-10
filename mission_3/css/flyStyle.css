@@ -1,0 +1,73 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    background-color: #F3F1F5;
+    height: 60px;
+    line-height: 60px;
+    margin-bottom: 5px;
+    min-width: 510px;
+}
+/*
+ *  article中分三列布局.left、middle、right，向左浮动脱离文档流
+ *  
+ *
+*/
+article {
+    overflow: hidden;
+    min-width: 550px;
+}
+
+/*
+ *  middle框宽度100%,并使其内部inner的左右外边距留出left和right框的位置
+ *  接着使用负边距,调整left和right到指定位置
+*/
+
+article .middle {
+    width: 100%;
+    float: left;
+    min-width: 150px;
+}
+
+.middle .inner {
+    margin-left: 155px;
+    margin-right: 205px;
+}
+
+/*
+ *  left、right，采用负边距调整位置
+*/
+
+article .left {
+    width: 130px;
+    float: left;
+    margin-left: -100%;
+}
+
+article .right {
+    width: 180px;
+    float: left;
+    margin-left: -200px;
+}
+
+.article {
+    background-color: #F3F1F5;
+    padding: 10px;
+    text-indent: 32px;
+    /*
+     *  使用margin-bottom和padding-bottom技巧,使底部对齐.
+    */
+    margin-bottom: -9999px;
+    padding-bottom: 9999px;
+}
+
+footer {
+    background-color: #F3F1F5;
+    height: 60px;
+    width: 100%;
+    line-height: 60px;
+    margin-top: 5px;
+    text-align: center;
+}
