@@ -232,6 +232,126 @@ html body {
     }
 }
 
+.actionanimation {
+    -webkit-backface-visibility: visible;
+    -webkit-transform-origin: center center;
+    -webkit-animation: action 2.5s 0.5s infinite ease-in-out normal none;
+}
+
+@-webkit-keyframes action {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    6% {
+        -webkit-transform: rotate(-6deg);
+    }
+    12% {
+        -webkit-transform: rotate(-12deg);
+    }
+    18% {
+        -webkit-transform: rotate(-18deg);
+    }
+    24% {
+        -webkit-transform: rotate(-24deg);
+    }
+    35% {
+        -webkit-transform: rotate(-34deg);
+    }
+    41% {
+        -webkit-transform: rotate(-44deg);
+    }
+    47% {
+        -webkit-transform: rotate(-54deg);
+    }
+    52% {
+        -webkit-transform: rotate(-44deg);
+    }
+    54% {
+        -webkit-transform: rotate(-34deg);
+    }
+    56% {
+        -webkit-transform: rotate(-24deg);
+    }
+    58% {
+        -webkit-transform: rotate(-18deg);
+    }
+    62% {
+        -webkit-transform: rotate(-12deg);
+    }
+    76% {
+        -webkit-transform: rotate(-6deg);
+    }
+    84% {
+        -webkit-transform: rotate(-4deg);
+    }
+    92% {
+        -webkit-transform: rotate(-2deg);
+    }
+    100% {
+        -webkit-transform: rotate(0deg);
+    }
+}
+
+.armanimation {
+    -webkit-backface-visibility: visible;
+    -webkit-transform-origin: center center;
+    -webkit-animation: armact 2.5s 0.5s infinite ease-in-out normal none;
+}
+
+@-webkit-keyframes armact {
+    0% {
+        -webkit-transform: rotate(46deg);
+    }
+    6% {
+        -webkit-transform: rotate(50deg);
+    }
+    12% {
+        -webkit-transform: rotate(54deg);
+    }
+    18% {
+        -webkit-transform: rotate(58deg);
+    }
+    24% {
+        -webkit-transform: rotate(62deg);
+    }
+    35% {
+        -webkit-transform: rotate(70deg);
+    }
+    41% {
+        -webkit-transform: rotate(78deg);
+    }
+    47% {
+        -webkit-transform: rotate(86deg);
+    }
+    52% {
+        -webkit-transform: rotate(78deg);
+    }
+    54% {
+        -webkit-transform: rotate(70deg);
+    }
+    56% {
+        -webkit-transform: rotate(62deg);
+    }
+    58% {
+        -webkit-transform: rotate(58deg);
+    }
+    62% {
+        -webkit-transform: rotate(54deg);
+    }
+    76% {
+        -webkit-transform: rotate(50deg);
+    }
+    84% {
+        -webkit-transform: rotate(46deg);
+    }
+    92% {
+        -webkit-transform: rotate(30deg);
+    }
+    100% {
+        -webkit-transform: rotate(25deg);
+    }
+}
+
 .fly-1 {
     width: 25px;
     height: 25px;
@@ -293,10 +413,10 @@ html body {
     border-bottom-left-radius: 44% 38px;
     border-bottom-right-radius: 56% 33px;
     background: transparent;
-    transform: rotate(20deg);
+    transform: rotate(46deg);
     position: relative;
-    left: -249px;
-    top: 65px;
+    left: -259px;
+    top: 69px;
     z-index: -5;
 }
 
@@ -338,4 +458,78 @@ html body {
     left: -274px;
     top: 99px;
     z-index: -2;
+}
+
+.leaf-1 {
+    width: 35px;
+    height: 35px;
+    background-color: #FC485B;
+    border-radius: 3px 80px 9px 80px;
+}
+
+.leaf-2 {
+    width: 32px;
+    height: 32px;
+    background-color: #f5273c;
+    border-radius: 5px 80px 5px 80px;
+    transform: rotate(31deg);
+    position: relative;
+    left: 12px;
+    top: -38px;
+    z-index: -1;
+}
+
+.leaf-3 {
+    width: 22px;
+    height: 22px;
+    background-color: #fb0000;
+    border-radius: 0px 28px 0px 28px;
+    transform: rotate(12deg);
+    position: relative;
+    left: 9px;
+    top: -70px;
+    z-index: -2;
+}
+
+.stem {
+    width: 3px;
+    height: 100px;
+    border: 2px solid green;
+    background-color: #fff;
+    border-radius: 80px 80px 12px 116px;
+    transform: rotate(-31deg);
+    position: relative;
+    left: 55px;
+    top: -65px;
+    z-index: -3;
+}
+
+.thorn-1 {
+    border-top: 17px solid transparent;
+    border-right: 5px solid #39ab09;
+    height: 0;
+    border-bottom: 0px solid transparent;
+    transform: rotate(-72deg);
+    position: relative;
+    left: 11px;
+    top: -140px;
+    z-index: -4;
+}
+
+.thorn-2 {
+    border-top: 17px solid transparent;
+    border-right: 5px solid #39ab09;
+    height: 0;
+    border-bottom: 0px solid transparent;
+    transform: rotate(-10deg);
+    position: relative;
+    left: 26px;
+    top: -148px;
+    z-index: -4;
+}
+
+.flower {
+    position: relative;
+    left: -441px;
+    top: 107px;
 }
