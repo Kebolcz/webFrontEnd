@@ -1,0 +1,305 @@
+@media (min-width: 768px) {
+    header,
+    .media-content,
+    article,
+    footer {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .header,
+    #content,
+    .footer {
+        display: none;
+    }
+    html,
+    body {
+        height: 100%;
+        width: 100%;
+        background-color: #f1f1f1;
+    }
+    body {
+        min-width: 320px;
+        min-height: 1px;
+    }
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    /*header css style*/
+    header {
+        height: 35px;
+        margin-bottom: 9px;
+        background-color: #f1f1f1;
+    }
+    .header-left {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        padding: 0 6px 0 14px;
+        height: 40px;
+        line-height: 40px;
+    }
+    .header-right {
+        position: absolute;
+        top: 8px;
+        right: 16px;
+        width: 25px;
+        height: 25px;
+        background-image: url(../img_bd/login.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+    div[class^="weather"] {
+        display: inline-block;
+    }
+    .weather-icon {
+        position: relative;
+        top: 7px;
+        height: 28px;
+        width: 28px;
+        line-height: 28px;
+        margin-left: -1px;
+        background: url(../img_bd/sun.png) no-repeat;
+        background-size: 80% 80%;
+    }
+    .weather-num {
+        font-size: 29px;
+        color: #999;
+        padding-left: 4px;
+        padding-right: 3px;
+        font-weight: 300;
+        margin-left: -7px;
+    }
+    .weather-status p {
+        height: 14px;
+        line-height: 14px;
+        font-size: 10px;
+        color: #999;
+        margin-bottom: 0px;
+    }
+    .weather-status {
+        margin-left: -7px;
+    }
+    .icon-down {
+        display: inline-block;
+        vertical-align: bottom;
+        height: 37px;
+        width: 37px;
+        background: url(../img_bd/down.png) no-repeat 23px 14px/40%;
+        transform: rotate(180deg);
+    }
+    /*header css style end*/
+    /*content css style*/
+    .media-content {
+        background-color: #f1f1f1;
+    }
+    .media-content .logo {
+        height: 74px;
+        padding-bottom: 17px;
+    }
+    .media-content .logo img {
+        height: 57px;
+    }
+    #index-form {
+        height: 47px;
+        padding: 1px 0;
+        margin: 0 16px;
+    }
+    .form-wrap {
+        height: 100%;
+        display: flex;
+        display: -webkit-flex;
+    }
+    .form-wrap .form-btn {
+        position: relative;
+    }
+    .form-wrap input {
+        height: 45px;
+        line-height: 45px;
+        padding: 7px 42px 7px 6px;
+        text-indent: 7px;
+        flex: 1;
+        -webkit-flex: 1;
+        border: 1px solid #d2d2d2;
+        -webkit-border-radius: 2px;
+        border-radius: 2px;
+        -webkit-box-shadow: 0 2px 0 0 rgba(0, 0, 0, .03);
+        box-shadow: 0 2px 0 0 rgba(0, 0, 0, .03);
+    }
+    .form-wrap .form-btn #form-btn {
+        height: 45px;
+        line-height: 45px;
+        width: 82px;
+        background-color: #38f;
+        color: #fff;
+        white-space: nowrap;
+        border-top: 1px solid #38f;
+        border-bottom: 1px solid #38f;
+        border-left: 0;
+        border-right: 0;
+    }
+    .form-wrap .form-btn .callicon {
+        width: 39px;
+        height: 39px;
+        position: absolute;
+        top: 3px;
+        right: 82px;
+    }
+    .callicon .ms {
+        width: 14px;
+        height: 20px;
+        background: url(../img_bd/mmsicon.png) no-repeat scroll 0px 0px / 37px 20px;
+        position: relative;
+        top: 10px;
+    }
+    .callicon .ms:before {
+        content: "";
+        position: absolute;
+        top: 10px;
+        right: -14px;
+        border: 4px solid transparent;
+        border-top-color: #717077;
+    }
+    nav {
+        height: 91px;
+        padding-top: 19px;
+    }
+    nav .wrap-items {
+        height: 43px;
+    }
+    nav a {
+        display: inline-block;
+        height: 43px;
+        width: 28px;
+        margin: 0 auto;
+    }
+    nav i {
+        display: inline-block;
+        width: 22px;
+        height: 22px;
+        background: url(../img_bd/nav.png) no-repeat 0 0 /22px;
+    }
+    nav span {
+        display: inline-block;
+        height: 13px;
+        text-align: center;
+        font-size: 13px;
+        line-height: 13px;
+        color: #999;
+    }
+    nav .icon-focus {
+        background-position: 0 -286px;
+    }
+    nav .icon-news {
+        background-position: 0 -418px;
+    }
+    nav .icon-novel {
+        background-position: 0 -352px;
+    }
+    nav .icon-video {
+        background-position: 0 -484px;
+    }
+    nav .icon-shopping {
+        background-position: 0 -440px;
+    }
+    nav .icon-map {
+        background-position: 0 -330px;
+    }
+    /*content css style end*/
+    /* news items css style */
+    article {
+        background-color: #fff;
+        display: block;
+    }
+    article h4 {
+        text-align: left;
+        line-height: 26px;
+        font-size: 16px;
+    }
+    .subtitle {
+        text-align: left;
+        color: #d2d2d2;
+        margin-top: 5px;
+    }
+    .subtitle span {
+        margin-left: 7px;
+    }
+    .newsimg {
+        height: 84px;
+    }
+    .newsimg div {
+        padding: 0 1px 0 0;
+    }
+    /*footer css style*/
+    footer {
+        height: 207px;
+    }
+    footer ul {
+        text-align: left;
+        list-style: none;
+    }
+    footer li {
+        position: relative;
+    }
+    footer ul a {
+        padding-left: 21px;
+        line-height: 33px;
+    }
+    .hoticon a:before {
+        content: "HOT";
+        position: absolute;
+        left: -5px;
+        top: 10px;
+        color: #fff;
+        font-size: 12px;
+        line-height: 12px;
+        background-color: red;
+        transform: scale(0.7);
+    }
+    .app {
+        background: url(../img_bd/w_icon2.png) no-repeat left center;
+        background-size: 16px 16px;
+    }
+    footer .copyright {
+        height: 98px;
+        margin-top: 12px;
+    }
+    .copyright a {
+        display: block;
+        height: 34px;
+    }
+    .fback {
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        background: url(../img_bd/fback.png) no-repeat 0 0 / 16px 16px;
+        position: relative;
+        top: 1px;
+    }
+    .police {
+        display: inline-block;
+        width: 12px;
+        height: 12px;
+        background: url(../img_bd/icon_police.png) no-repeat 0 0 / 12px 12px;
+        position: relative;
+        top: 1px;
+        margin-right: 2px;
+    }
+    /*footer css style end*/
+}
+
+@media (max-width: 412px) {
+    .form-wrap .form-btn #form-btn {
+        letter-spacing: -1px;
+    }
+
+    article h4 {
+        text-align: left;
+        line-height: 22px;
+        font-size: 14px;
+    }
+}

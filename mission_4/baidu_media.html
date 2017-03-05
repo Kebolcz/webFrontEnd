@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>百度一下，你就知道</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
+    <link rel="shortcut icon" type="image/x-icon" href="./img_bd/favicon.ico">
+    <style type="text/css">
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: Verdana, "Lantinghei SC", "Hiragino Sans GB", "Microsoft Yahei", Helvetica, arial, \5b8b\4f53, sans-serif
+    }
+    
+    header {
+        position: relative;
+        height: 48px;
+    }
+    
+    header nav {
+        position: absolute;
+        top: 19px;
+        right: 10px;
+    }
+    
+    header nav a {
+        margin-left: 20px;
+        color: #000;
+        font-weight: 700;
+    }
+    
+    content img {
+        width: 270px;
+        height: auto;
+    }
+    
+    content form {
+        margin: 22px auto 0;
+    }
+
+    content input {
+    	height: 36px;
+    	width: 540px;
+    	text-indent: 7px;
+    }
+
+    content button {
+    	height: 36px;
+    }
+
+    .inputWrap {
+    	display: inline-block;
+    	background: url(../img/camera.png) no-repeat;
+    }
+    </style>
+</head>
+
+<body>
+    <header class="container-fluid">
+        <nav>
+            <a class="navlink" href="http://www.nuomi.com/?cid=002540" title="点击百度糯米">糯米</a>
+            <a class="navlink" href="http://news.baidu.com/" title="点击百度新闻">新闻</a>
+            <a class="navlink" href="http://www.hao123.com/" title="点击hao123">hao123</a>
+            <a class="navlink" href="http://map.baidu.com/" title="点击百度地图">地图</a>
+            <a class="navlink" href="http://v.baidu.com/" title="点击百度视频">视频</a>
+            <a class="navlink" href="http://tieba.baidu.com/" title="点击百度贴吧">贴吧</a>
+            <a class="navlink" href="https://passport.baidu.com/v2/?login&tpl=mn&u=http%3A%2F%2Fwww.baidu.com%2F" title="点击登录百度">登录</a>
+            <a href="http://www.baidu.com/gaoji/preferences.html" title="点击设置百度">设置</a>
+            <a href="http://www.baidu.com/more/" title="点击百度更多产品">更多产品</a>
+        </nav>
+    </header>
+    <content>
+        <div class="container text-center">
+            <img src="./img_bd/bd_logo.png">
+            <form class="form-inline">
+            	<div class="inputWrap">
+                	<input type="text" name="wd" id="searchContent">
+                </div>
+                <button type="submit" class="btn btn-primary">百度一下</button>
+            </form>
+        </div>
+    </content>
+    <footer>
+    </footer>
+</body>
+
+</html>

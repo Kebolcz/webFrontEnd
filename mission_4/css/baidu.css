@@ -1,0 +1,288 @@
+html {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+body {
+    /*overflow-y: hidden;*/
+    min-width: 810px;
+    min-height: 600px;
+    position: relative;
+}
+
+
+/*--header--*/
+
+.header {
+    position: absolute;
+    right: 0;
+    top: 0;
+    text-align: right;
+    padding: 0 10px 0 0;
+    margin: 19px 0 5px;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+a:link,
+a:visited,
+a:active {
+    color: #999;
+}
+
+a:hover {
+    color: #00c;
+}
+
+.first i {
+    width: 10px;
+    height: 10px;
+    font-size: 0;
+    line-height: 10px;
+    background-color: #fff;
+    /*display: block;*/
+    position: absolute;
+    border: 1px solid #ccc;
+    border-style: solid none none solid;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    top: -6px;
+    left: 50%;
+    margin-left: -5px;
+}
+
+
+/*选择符级Hack,IE7*/
+
+*+html #arrow {
+    display: none;
+}
+
+.first>li:not(:first-child) {
+    z-index: 999;
+    position: relative;
+}
+
+.config li:hover {
+    background-color: #3385FF;
+    color: red !important;
+}
+
+.first {
+    position: absolute;
+    top: 30px;
+    right: 64px;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    background-color: #fff;
+    border: 1px solid #e4e4e4;
+    box-shadow: 1px 1px 5px #d1d1d1;
+    width: 75px;
+    height: 104px;
+    text-align: center;
+    display: none;
+}
+
+.first a {
+    margin: 0!important;
+    line-height: 26px;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+.config:hover>ul {
+    display: block;
+}
+
+.navlink {
+    // display: inline-block;
+    float: left;
+    margin-left: 13px;
+    line-height: 24px;
+}
+
+.aside {
+    width: 74px;
+    border-left: 1px solid #e7e7e7;
+    position: absolute !important;
+    background-color: #f9f9f9;
+    z-index: 2;
+    right: 0;
+    top: -19px;
+    +top: -5px;
+    min-height: 630px;
+    display: none;
+}
+
+.aside span {
+    width: 36px;
+    height: 36px;
+    display: block;
+    margin: 10px auto 5px;
+    background: url(../img_bd/bdbri_icons.png) no-repeat;
+    cursor: pointer;
+}
+
+.aside {
+    position: absolute;
+}
+
+.aside>a:last-child {
+    font-weight: normal;
+    line-height: 76px;
+}
+
+.aside a {
+    display: block;
+    text-align: center;
+    width: 66px;
+    height: 76px;
+    margin: 0 auto;
+    border-bottom: #f0f0f0 1px solid;
+    color: #666;
+    text-decoration: none;
+    overflow: hidden;
+}
+
+.more {
+    height: 23px;
+    width: 60px;
+    background-color: #38f;
+    display: inline-block;
+    text-align: center
+}
+
+.more>a {
+    color: #fff;
+}
+
+.more:hover>.aside {
+    display: block;
+}
+
+#imgitem_1 {
+    width: 40px;
+    background-position: -72px 0;
+}
+
+#imgitem_2 {
+    background-position: -112px 0;
+}
+
+#imgitem_3 {
+    background-position: -36px 0;
+}
+
+#imgitem_4 {
+    background-position: -148px 0;
+}
+
+#imgitem_5 {
+    background-position: -184px 0;
+}
+
+.all {
+    margin-top: 15px;
+    height: 30px;
+    width: 85px;
+    overflow: hidden;
+}
+
+.recover {
+    font: 13px arial;
+    font-weight: 700;
+    position: relative;
+    top: 10px;
+}
+
+
+/*--END header--*/
+
+
+/*--search form--*/
+
+#content {
+    margin: 0 auto;
+    padding-top: 100px;
+    line-height: 2.4;
+}
+
+#content p {
+    position: relative;
+    width: 740px;
+    margin: 0 auto
+}
+
+form input {
+    vertical-align: bottom;
+    /*IE6、7识别*/
+    +vertical-align: baseline;
+}
+
+#searchContent {
+    margin: 0 -7.5px 0 0;
+    width: 540px;
+    height: 36px;
+    line-height: 36px;
+    border: 1px solid #b6b6b6;
+    outline: 0;
+    text-indent: 10px;
+}
+
+#searchContent:hover {
+    border-color: #999;
+}
+
+#searchContent:focus {
+    border-color: #ccc;
+}
+
+#search {
+    width: 100px;
+    height: 36px;
+    background-color: #3385ff;
+    color: #fff;
+    border: 1px none;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.camera {
+    position: absolute;
+    right: 22%;
+    top: 50%;
+    margin-top: -8px;
+    height: 19px;
+    width: 18px;
+    background: #fff url(../img_bd/camera.png) no-repeat;
+}
+
+
+/*鼠标hover,改变图标*/
+
+.camera:hover {
+    background-position: 0 -20px;
+}
+
+
+/*--END search form--*/
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    margin: 0 auto;
+    color: #999;
+    font-size: 13px;
+    width: 100%;
+}
+
+.footer a {
+    color: #999;
+    font-size: 13px;
+}

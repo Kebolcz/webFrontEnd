@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>AppCan EMM企业移动管理平台</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="./css/emm_contentStyle.css">
+</head>
+
+<body>
+    <div class="container box_flex box_orient_v" style="height: 100%;width: 100%;min-width: 520px;">
+        <nav class="navbar navbar-default" style="background-color: #00A3A4;margin-bottom: 0;border: none;">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button id="tog" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false" style="position: relative;top: 15px;">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#" style="height: 80px;">
+                        <img alt="Brand" src="./img_2/top_icon.png" style="height: 50px;">
+                    </a>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <div class="collapsed_myimgdiv" style="height: 80px;float: right;margin-right: 10px;">
+                        <img class="navbar-right collapsed_myimg" src="./img_2/tuichu1.png" style="position: relative;top: 50%;margin-top: -15px;cursor: pointer;">
+                    </div>
+                    <p class="navbar-text navbar-right collapsed_myp" style="height: 50px;line-height: 50px;color: #fff;font-size: 14px;text-decoration: none;font-family: Tahoma, Verdana, 微软雅黑, 新宋体;margin-right: 10px;cursor: pointer;">当前用户:【admin】</p>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+        </nav>
+        <div class="row box_flex_1 box_flex dropdown-li">
+        	<!-- <button id="togleft" type="button" class="btn btn-default">
+        		<span class="glyphicon glyphicon-log-out"></span>
+    		</button> -->
+            <div class="col-md-3 col-xs-3 col-sm-3 leftpannel box_flex_1">
+				<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+				  <div class="panel pannel-info">
+				 	<a role="button" id="priF" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+					    <div class="panel-heading" role="tab" id="headingOne">
+					      <h4 class="panel-title">
+					          前端初级
+					      </h4>
+					    </div>
+				    </a>
+				    <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+				      <div class="">
+				        <div class="btn-group-vertical widfix" role="group" aria-label="...">
+						  <button type="button" class="btn btn-default">CSS</button>
+						  <button type="button" class="btn btn-default">JavaScript</button>
+						</div>
+				      </div>
+				    </div>
+				  </div>
+				  <div class="panel pannel-info">
+				    <a class="collapsed" id="secF" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+					    <div class="panel-heading" role="tab" id="headingTwo">
+					      <h4 class="panel-title">
+					          前端中级
+					      </h4>
+					    </div>
+				    </a>
+				    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+				      <div class="">
+				        <div class="btn-group-vertical widfix" role="group" aria-label="...">
+						  <button type="button" class="btn btn-default">CSS</button>
+						  <button type="button" class="btn btn-default">JavaScript</button>
+						</div>
+				      </div>
+				    </div>
+				  </div>
+				  <div class="panel pannel-info">
+				     <a class="collapsed" id="senF" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+					    <div class="panel-heading" role="tab" id="headingThree">
+					      <h4 class="panel-title">
+					          前端高级
+					      </h4>
+					    </div>
+				     </a>
+				    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+				      <div class="">
+				        <div class="btn-group-vertical widfix" role="group" aria-label="...">
+						  <button type="button" class="btn btn-default">CSS</button>
+						  <button type="button" class="btn btn-default">JavaScript</button>
+						</div>
+				      </div>
+				    </div>
+				  </div>
+				  <div class="panel pannel-info">
+				     <a class="collapsed" id="cssT" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+					    <div class="panel-heading" role="tab" id="headingFour">
+					      <h4 class="panel-title">
+					          CSS奇淫技巧
+					      </h4>
+					    </div>
+				     </a>
+				    <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+				      <div class="">
+				        <div class="btn-group-vertical widfix" role="group" aria-label="...">
+						  <button type="button" class="btn btn-default">CSS奇淫技巧</button>
+						</div>
+				      </div>
+				    </div>
+				  </div>
+				<!-- </div> -->
+				<div class="panel pannel-info">
+				     <a class="collapsed" id="jsT" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+					    <div class="panel-heading" role="tab" id="headingFive">
+					      <h4 class="panel-title">
+					          JavaScript奇淫技巧
+					      </h4>
+					    </div>
+				     </a>
+				    <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+				      <div class="">
+				        <div class="btn-group-vertical widfix" role="group" aria-label="...">
+						  <button type="button" class="btn btn-default">JavaScript奇淫技巧</button>
+						</div>
+				      </div>
+				    </div>
+				  </div>
+			  	</div>
+            </div>
+            <div class="col-md-9 col-xs-9 rightpannel box_flex_1" style="overflow: hidden;">
+				<div class="embed-responsive embed-responsive-4by3" style="padding-bottom: 100% !important;position: static !important;">
+				  <iframe class="embed-responsive-item primary" src="./primaryFront.html"></iframe>
+				  <iframe class="embed-responsive-item secondary hide" src="./secondaryFront.html"></iframe>
+				  <iframe class="embed-responsive-item senior hide" src="./seniorFront.html"></iframe>
+				  <iframe class="embed-responsive-item cssTech hide" src="./cssTech.html"></iframe>
+				  <iframe class="embed-responsive-item jsTech hide" src="./jsTech.html"></iframe>
+				</div>
+            </div>
+        </div>
+        <footer>
+        <span class="copyright">
+            Copyright © 2010-2016 All rights reserved 正益移动互联科技股份有限公司版权所有</span>
+        </footer>
+    </div>
+    <script type="text/javascript" src="./js/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+    	// $('.dropdown-toggle').dropdown();
+    	$("#priF").click(function(){
+    			$("iframe").addClass("hide");
+    			$("iframe:eq(0)").removeClass("hide");
+    	});
+    	$("#secF").click(function(){
+    			$("iframe").addClass("hide");
+    			$("iframe:eq(1)").removeClass("hide");
+    	});
+    	$("#senF").click(function(){
+    			$("iframe").addClass("hide");
+    			$("iframe:eq(2)").removeClass("hide");
+    	});
+    	$("#cssT").click(function(){
+    			$("iframe").addClass("hide");
+    			$("iframe:eq(3)").removeClass("hide");
+    	});
+    	$("#jsT").click(function(){
+    			$("iframe").addClass("hide");
+    			$("iframe:eq(4)").removeClass("hide");
+    	});
+
+    	// $("#togleft").click(function(){
+    	// 	$(".leftpannel").show();
+    	// 	$("#togleft").hide();
+    	// });
+
+    </script>
+</body>
+
+</html>
