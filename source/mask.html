@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>遮罩demo</title>
+    <script type="text/javascript" src="../mission_4/js/jquery.min.js"></script>
+    <style>
+    #ajaxloader {
+        position: absolute;
+        top: 0px;
+        filter: alpha(opacity=60);
+        background-color: rgb(255, 255, 255);
+        z-index: 1002;
+        left: 0px;
+        opacity: 0.5;
+        -webkit-opacity: 0.5;
+        /*height: 750px;
+            width: 1280px;*/
+    }
+    
+    #loading {
+        position: fixed;
+        width: 30px;
+        height: 30px;
+        left: 50%;
+        top: 50%;
+        margin: 0 0 0 -15px;
+        border: 8px solid #000;
+        border-right-color: transparent;
+        border-radius: 50%;
+        box-shadow: 0 0 25px 2px #a25555;
+        -webkit-animation: spin 1s linear infinite;
+        -moz-animation: spin 1s linear infinite;
+        -ms-animation: spin 1s linear infinite;
+        -o-animation: spin 1s linear infinite;
+        animation: spin 1s linear infinite;
+        margin-top: -45px;
+        margin-left: -15px;
+    }
+    
+    @-webkit-keyframes spin {
+        from {
+            -webkit-transform: rotate(0deg);
+            opacity: 0.6;
+        }
+        50% {
+            -webkit-transform: rotate(180deg);
+            opacity: 1;
+        }
+        to {
+            -webkit-transform: rotate(360deg);
+            opacity: 0.6;
+        }
+    }
+    
+    @-moz-keyframes spin {
+        from {
+            -moz-transform: rotate(0deg);
+            opacity: 0.6;
+        }
+        50% {
+            -moz-transform: rotate(180deg);
+            opacity: 1;
+        }
+        to {
+            -moz-transform: rotate(360deg);
+            opacity: 0.6;
+        }
+    }
+    
+    @-ms-keyframes spin {
+        from {
+            -ms-transform: rotate(0deg);
+            opacity: 0.6;
+        }
+        50% {
+            -ms-transform: rotate(180deg);
+            opacity: 1;
+        }
+        to {
+            -ms-transform: rotate(360deg);
+            opacity: 0.6;
+        }
+    }
+    
+    @-o-keyframes spin {
+        from {
+            -o-transform: rotate(0deg);
+            opacity: 0.6;
+        }
+        50% {
+            -o-transform: rotate(180deg);
+            opacity: 1;
+        }
+        to {
+            -o-transform: rotate(360deg);
+            opacity: 0.6;
+        }
+    }
+    
+    @keyframes spin {
+        from {
+            transform: rotate(0deg);
+            opacity: 0.6;
+        }
+        50% {
+            transform: rotate(180deg);
+            opacity: 1;
+        }
+        to {
+            transform: rotate(360deg);
+            opacity: 0.6;
+        }
+    }
+    </style>
+</head>
+
+<body>
+    <div id="ajaxloader" style="display: block;">
+        <div id="loading" style="border-right: 0px;display:none;"></div>
+    </div>
+    <script type="text/javascript">
+    	function showMask() {
+            $("#ajaxloader").css("height", $(document).height());
+            $("#ajaxloader").css("width", $(document).width());
+            $("#loading").show();
+        }
+        function hideMask() {
+            $("#ajaxloader").css("height", "0");
+            $("#ajaxloader").css("width", "0");
+            $("#loading").hide();
+        }
+        // setInterval(function(){showMask();setTimeout(hideMask(),1000)},3000);
+        //setTimeout(setInterval(hideMask(),1000),3000)
+        var run = function(){
+        	showMask();
+        	setTimeout("hideMask()",5000);
+        }
+        setInterval("run()",3000)
+    </script>
+</body>
+
+</html>

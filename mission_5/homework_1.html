@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>将0~100分学员以10分为界，分为十段，然后计算出该生为数字几等生</title>
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
+    <style type="text/css">
+    	form {
+    		text-align: center;
+    		padding: 20px;
+    	}
+    	form>div {
+    		margin-bottom: 5px;
+    	}
+    	form {
+            counter-reset: section;
+        }
+
+        form .sItem { 
+            counter-increment: section; 
+        }
+
+        form .sItem:before { 
+            content: counter(section, decimal) "."; 
+        }
+        button {
+        	margin-top: 30px;
+        	width: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form id="form">
+        	<div class="form-inline sItem">
+	            <div class="form-group">
+	                <label class="sr-only" for="InputName1">Name</label>
+	                <input type="text" class="form-control" id="InputName1" name="InputName1" placeholder="Name">
+	            </div>
+	            <div class="form-group">
+	                <label class="sr-only" for="InputScore1">Score</label>
+	                <input type="text" class="form-control" id="InputScore1" name="InputScore1" placeholder="score">
+	            </div>
+            </div>
+            <div class="form-inline sItem">
+	            <div class="form-group">
+	                <label class="sr-only" for="InputName2">Name</label>
+	                <input type="text" class="form-control" id="InputName2" name="InputName2" placeholder="Name">
+	            </div>
+	            <div class="form-group">
+	                <label class="sr-only" for="InputScore2">Score</label>
+	                <input type="text" class="form-control" id="InputScore2" name="InputScore2" placeholder="score">
+	            </div>
+            </div>
+            <div class="form-inline sItem">
+	            <div class="form-group">
+	                <label class="sr-only" for="InputName3">Name</label>
+	                <input type="text" class="form-control" id="InputName3" name="InputName3" placeholder="Name">
+	            </div>
+	            <div class="form-group">
+	                <label class="sr-only" for="InputScore3">Score</label>
+	                <input type="text" class="form-control" id="InputScore3" name="InputScore3" placeholder="score">
+	            </div>
+            </div>
+            <button type="button" id="addItem" class="btn btn-info sr-only">添加</button>
+            <button type="submit" id="commit" class="btn btn-primary">提交</button>
+        </form>
+        
+    </div>
+    <script type="text/javascript" src="./js/jquery.min.js"></script>
+    <script type="text/javascript">
+		$("#commit").click(function(){
+			var items = $('#form').serializeArray();
+			//alert(JSON.stringify(items));
+			var map =new Map();
+			var pattern = /^([1-9]\d{0,1}|100)$/;
+			for (var i = 0; i < items.length; i++) {
+				if(items[i].value==null||items[i].value==""){
+					alert("第"+(i/2+1)+"条名字不能为空!");
+					return false;
+				}
+				if(!pattern.test(items[i+1].value)){
+					alert("第"+(i/2+1)+"条成绩不合法!");
+					return false;
+				}
+				map.set(items[i].value,items[++i].value);
+			};
+			map.forEach(function(value,key){
+				if(value>=90){
+					alert(key+"成绩优秀");
+				}else if(value>=80&&value<90){
+					alert(key+"成绩优良!");
+				}else if(value>=70&&value<80){
+					alert(key+"成绩中等!");
+				}else if(value>=60&&value<70){
+					alert(key+"成绩及格!");
+				}else if(value<60){
+					alert(key+"成绩不及格!");
+				}
+			});
+		});
+	</script>
+<body>
+</html>
