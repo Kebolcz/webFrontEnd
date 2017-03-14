@@ -1,0 +1,22 @@
+form {
+	text-align: center;
+	padding: 20px;
+}
+form>div {
+	margin-bottom: 5px;
+}
+form {
+    counter-reset: section;
+}
+
+form .sItem { 
+    counter-increment: section; 
+}
+
+form .sItem:before { 
+    content: counter(section, decimal) "."; 
+}
+button {
+	margin-top: 30px;
+	width: 100px;
+}

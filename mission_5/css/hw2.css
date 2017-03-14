@@ -1,0 +1,14 @@
+
+#panel {
+    text-align: center;
+    padding: 30px 100px 30px 100px;
+}
+#panel>div:nth-child(2)>input {
+    width: 70px;
+}
+.panel2 {
+    padding: 0 100px 0 100px;
+}
+.panel1{
+    padding: 100px 100px 0 100px;
+}
