@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>手机屏幕使用rem进行适配</title>
+	<!-- width=device-width  设置手机物理像素等于手机像素 -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+	<style type="text/css">
+		/*媒体查询,根据手机屏幕宽度,调整font-size初次适配*/
+        @media screen and (max-width: 1250px) { 
+            html {font-size: 40px;} 
+        } 
+        @media screen and (max-width: 750px) { 
+            html {font-size: 32px;} 
+        } 
+        @media screen and (max-width: 640px) { 
+            html {font-size: 24px;} 
+        } 
+        @media screen and (max-width: 360px) { 
+            html {font-size: 16px;} 
+        } 
+	</style>
+</head>
+<body>
+	<header>...</header>
+	<article>...</article>
+	<footer>...</footer>
+	<script type="text/javascript">
+		//屏幕物理像素
+        var screenWidth = document.documentElement.clientWidth;
+        //alert(screenWidth);
+        //屏幕像素密度
+        var ra = window.devicePixelRatio;
+        
+		/*
+		 *	screenWidth*ra=设备像素!
+		 */
+
+        // alert(ra);
+        //加载后根据屏幕物理像素设置font-size,使1rem等于屏幕宽度的1/20
+        var scale = 20;
+        $("html").css("font-size",screenWidth/scale+"px");
+	</script>
+</body>
+</html>
