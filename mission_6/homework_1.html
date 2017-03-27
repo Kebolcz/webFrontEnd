@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>完整版简易计算器</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="./css/hw1.css">
+</head>
+
+<body>
+    <div class="container fbcenter">
+        <div id="computer">
+            <h3>简单计算器</h3>
+            <input type="text" id="text" name="text" class="text" disabled="disabled" value="0">
+            <table class="buttons" id="table">
+                <tbody>
+                    <tr>
+                        <td>
+                            <input type="button" value="←" class="button del" id="dele">
+                        </td>
+                        <td>
+                            <input type="button" value="CE" class="button clear" id="ce">
+                        </td>
+                        <td>
+                            <input type="button" value="C" class="button clear" id="c">
+                        </td>
+                        <td>
+                            <input type="button" value="+/-" class="button pm" id="plusMinus">
+                        </td>
+                        <td>
+                            <input type="button" value="1/x" class="button rec" id="reciprocal">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="button" value="7" class="button show" id="seven">
+                        </td>
+                        <td>
+                            <input type="button" value="8" class="button show" id="eight">
+                        </td>
+                        <td>
+                            <input type="button" value="9" class="button show" id="nine">
+                        </td>
+                        <td>
+                            <input type="button" value="÷" class="button oper" id="div">
+                        </td>
+                        <td>
+                            <input type="button" value="%" class="button percent" id="percent">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="button" value="4" class="button show" id="four">
+                        </td>
+                        <td>
+                            <input type="button" value="5" class="button show" id="five">
+                        </td>
+                        <td>
+                            <input type="button" value="6" class="button show" id="six">
+                        </td>
+                        <td>
+                            <input type="button" value="X" class="button oper" id="multi">
+                        </td>
+                        <td>
+                            <input type="button" value="√" class="button rad" id="rad">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="button" value="1" class="button show" id="one">
+                        </td>
+                        <td>
+                            <input type="button" value="2" class="button show" id="two">
+                        </td>
+                        <td>
+                            <input type="button" value="3" class="button show" id="three">
+                        </td>
+                        <td>
+                            <input type="button" value="-" class="button oper" id="sub">
+                        </td>
+                        <td rowspan="2">
+                            <input type="button" value="=" class="button res" id="result">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <input type="button" value="0" class="button show" id="zero">
+                        </td>
+                        <td>
+                            <input type="button" value="." class="button point" id="dot">
+                        </td>
+                        <td>
+                            <input type="button" value="+" class="button oper" id="add">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script type="text/javascript" src="./js/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/hw1.js"></script>
+</body>
+
+</html>

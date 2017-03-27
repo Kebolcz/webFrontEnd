@@ -1,0 +1,59 @@
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #8e8e8e;
+}
+
+.fbcenter {
+    display: -webkit-flex;
+    -webkit-justify-content: center;
+    -webkit-align-items: center;
+}
+
+#computer {
+    width: 10rem;
+    background-color: #fff;
+    text-align: center;
+    margin-top: 2rem;
+    box-shadow: inset 1px 2px 1px rgba(0, 0, 0, .075);
+    border-radius: 0.1rem;
+}
+
+.text {
+    width: 9.5rem;
+    height: 1.2rem;
+    -webkit-appearance: none;
+    text-align: right;
+    text-indent: 0.2rem;
+    border: 1px solid #ddd;
+    border-radius: 0.1rem;
+    background-color: transparent;
+}
+
+.buttons {
+    margin: 0.5rem auto 0;
+}
+
+.button {
+    width: 1.8rem;
+    margin-left: 0.1rem;
+    margin-bottom: 0.1rem;
+    height: 1.3rem;
+    border: 1px solid #ddd;
+    border-radius: 0.1rem;
+    font-weight: bold;
+    color: #1e395b;
+    background: #eaf1f9;
+}
+
+#result {
+    height: 2.7rem;
+}
+
+#zero {
+    width: 3.7rem;
+}
