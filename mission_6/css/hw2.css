@@ -16,7 +16,7 @@ header {
 .hrLeft {
     -webkit-box-flex: 2;
     height: 1rem;
-    background: url(./img/richanglogo168_24.png) no-repeat left center;
+    background: url(../img/richanglogo168_24.png) no-repeat left center;
     background-size: 3rem;
     display: -webkit-box;
     -webkit-box-align: center;
@@ -43,7 +43,7 @@ header {
     display: -webkit-box;
     -webkit-box-align: center;
     -webkit-box-pack: center;
-    background: url(./img/bd_logo1.png) no-repeat left 0.5rem bottom 0.1rem;
+    background: url(../img/bd_logo1.png) no-repeat left 0.5rem bottom 0.1rem;
     background-size: 3.5rem;
 }
 
@@ -60,7 +60,7 @@ form select {
     top: 50%;
     height: 0.8rem;
     color: #8e8e8e;
-    margin-top: -0.4rem;
+    transform: translate(0,-50%);
     appearance: none;
     border: none;
 }

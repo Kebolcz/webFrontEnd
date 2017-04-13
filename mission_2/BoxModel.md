@@ -25,4 +25,7 @@ display:-webkit-box;
 ```  
 > 2.3 弹性盒 __-flex-__ (新)  
 ```
-
+display: -webkit-flex;
+-webkit-justify-content: center;
+-webkit-align-items: center;  
+```

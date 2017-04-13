@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>xhr</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+    var ajax = new XMLHttpRequest();
+    ajax.onreadystatechange = function() {
+        // 通信成功时，状态值为4
+        if (ajax.readyState === 4) {
+            if (ajax.status === 200) {
+                console.log(ajax.responseText);
+            } else {
+                console.error(ajax.statusText);
+            }
+        }
+    };
+
+    ajax.onerror = function(e) {
+        console.error(xhr.statusText);
+    };
+    ajax.open('GET', 'https://emmq.casco.com.cn:8101/k2/installation?action=get_installation_country&key=cn', true);
+    // ajax.open('POST', 'https://emmq.casco.com.cn:8101/k2/installation', true);
+
+    ajax.send();
+    </script>
+</body>
+
+</html>

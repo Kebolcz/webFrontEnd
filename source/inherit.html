@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>JS组合继承</title>
+</head>
+<body>
+	<span id="panel">span Panel</span>
+	<script type="text/javascript">
+		function person(){
+			this.hair = 'black';
+			this.eye = 'black';
+			this.skin = 'yellow';
+			this.view = function(){
+				return 'hair: ' + this.hair + ',eye: ' + this.eye + ',skin: ' + this.skin;
+			}
+		}
+
+		function man(){
+			this.beard = 'black strong';
+			person.call(this);
+		}
+
+		man.prototype = new person();
+		man.prototype.constructor = man;
+		man.prototype.say = function(){
+			return 'saying something';
+		}
+
+		var one = new man();
+		document.getElementById('panel').innerText = one.say() + one.view() + one.beard;
+	</script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>深复制</title>
+</head>
+
+<body>
+    <span id="panel">span Panel</span>
+    <script type="text/javascript">
+    function deepCopy(p, c) {
+        var c = c || {};
+        for (var i in p) {
+            if (p[i] instanceof Object) {
+                c[i] = (p[i].constructor === Array) ? [] : {};
+                deepCpoy(p[i], c[i]);
+            } else {
+                c[i] = p[i];
+            }
+        }
+        return c;
+    }
+
+
+    var obj = {
+        name: 'kebo',
+        age: 15
+    }
+
+    var c = deepCopy(obj, c)
+    console.log(c)
+    for (var i in c) {
+        console.log(c[i])
+    }
+    </script>
+</body>
+
+</html>
