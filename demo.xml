@@ -1,0 +1,98 @@
+
+<root>
+  <ApplyDeliveryChange_hiddenBlock_MainStore>
+    <status></status>
+    <businessType />
+    <ImportFlag />
+    <ProfitCenter>BJ</ProfitCenter>
+    <DeliveryOrderProcInstId></DeliveryOrderProcInstId>
+    <draftId />
+    <formCounter />
+    <approvaledEmpId_Mail></approvaledEmpId_Mail>
+    <levelIsHigherDirector></levelIsHigherDirector>
+    <nowTime_Common></nowTime_Common>
+    <nowDate></nowDate>
+    <lastDate></lastDate>
+  </ApplyDeliveryChange_hiddenBlock_MainStore>
+  <ApplyDeliveryChange_serialNumber_MainStore>
+    <serialNumber></serialNumber>
+    <applicationDate></applicationDate>
+    <processStatus></processStatus>
+  </ApplyDeliveryChange_serialNumber_MainStore>
+  <ApplyDeliveryChange_applicantBlocks_MainStore>
+    <applicantEmpName></applicantEmpName>
+    <applicantEmpId></applicantEmpId>
+    <applicantPostLevel></applicantPostLevel>
+    <empSAPNo></empSAPNo>
+    <applicantDept_Value></applicantDept_Value>
+    <applicantDept_Text></applicantDept_Text>
+    <applicantDeptId></applicantDeptId>
+    <applicantDeptProfitCenter></applicantDeptProfitCenter>
+    <applicantDept_Text_CN></applicantDept_Text_CN>
+    <applicantDept_Text_EN></applicantDept_Text_EN>
+  </ApplyDeliveryChange_applicantBlocks_MainStore>
+  <ApplyDeliveryChange_agentBlock_MainStore>
+    <agentEmpName></agentEmpName>
+    <agentEmpId></agentEmpId>
+    <agentSAPNo></agentSAPNo>
+    <agentDeptJDE></agentDeptJDE>
+    <agentDeptId></agentDeptId>
+  </ApplyDeliveryChange_agentBlock_MainStore>
+  <MaterialGrid>
+    <row>
+      <RsNum></RsNum>
+      <Rspos></Rspos>
+      <NSID_Number></NSID_Number>
+      <Activity_Number></Activity_Number>
+      <Line_Number></Line_Number>
+      <Materials_Number></Materials_Number>
+      <Materials_Name></Materials_Name>
+      <Quantity></Quantity>
+      <Factory></Factory>
+      <Lgort></Lgort>
+      <Charg />
+      <Sobkz />
+      <Need_Time></Need_Time>
+      <Pspel></Pspel>
+      <Lfmng></Lfmng>
+      <Purchase_Quantity></Purchase_Quantity>
+      <Unit></Unit>
+      <LineAddress />
+      <DeliveryMode></DeliveryMode>
+      <ERPNumber></ERPNumber>
+      <success></success>
+      <Resultinfo></Resultinfo>
+      <QuantityOld></QuantityOld>
+    </row>
+  </MaterialGrid>
+  <TrackingGrid>
+    <row>
+      <ERPNumber>0010059889</ERPNumber>
+      <TrackingNumber />
+      <ViewTracking />
+      <TrackingRemarks />
+    </row>
+  </TrackingGrid>
+  <UploadFile />
+  <ApplyDeliveryChange_DetailsInfoBlock_MainStore>
+    <DeliveryOrder>FHTZ201705090006</DeliveryOrder>
+    <projectNo>A5.A0116310</projectNo>
+    <ProjectName>西安市地铁4号线工程信号系统采</ProjectName>
+    <ReceivingParty>0000200204</ReceivingParty>
+    <ReceivingPartyName>西安市地下铁道有限责任公司</ReceivingPartyName>
+    <Purpose>西安地铁四号线首两列车车载设备-车载线缆及连接器</Purpose>
+    <CargoReceiver>常帅</CargoReceiver>
+    <PhoneNumber>15810398418</PhoneNumber>
+    <City>北京</City>
+    <Postcodes>100045</Postcodes>
+    <MountingPoints>000000000000160664</MountingPoints>
+    <MountingPointsDesc>试车线</MountingPointsDesc>
+    <ShippingPointComb_Value>9200</ShippingPointComb_Value>
+    <ShippingPointComb_Text>北京工厂装运点</ShippingPointComb_Text>
+    <PlannedMdate>2017/06/30</PlannedMdate>
+    <DeliveryAddress>北京市西城区三里河东路5号中商大厦6楼</DeliveryAddress>
+    <ProductCategories_Value>1002</ProductCategories_Value>
+    <ProductCategories_Text>CC</ProductCategories_Text>
+    <Remarks />
+  </ApplyDeliveryChange_DetailsInfoBlock_MainStore>
+</root>

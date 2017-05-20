@@ -71,6 +71,10 @@ $(window).scroll(function() {
         layout();
     }
 });
+
+$(window).resize(function() {
+    layout();
+});
 /**
  * [判断页面滚动方法]
  * @return {[Boolean]} [页面滚动超过最后一个box的offset+其高度的一半后返回true]
