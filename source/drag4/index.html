@@ -1,0 +1,208 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=gbk" />
+  <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+  <script type="text/javascript" src="drag.js"></script>
+  <title>js拖动布局 - 适合在几个容器里把容器里的元素在各个容器里拖来拖去</title>
+  <style type="text/css">
+    body {
+      margin: 0px auto;
+      height: 100%;
+    }
+
+    #root {
+      margin: 0px auto;
+      width: 770px;
+    }
+
+    .dragitems {
+      padding: 5px;
+      width: 200px;
+      float: left;
+      margin: auto 10px;
+      border: 1px dotted #ccc;
+    }
+
+    .dragitem {
+      border: 1px solid #FFCC66;
+      height: 130px;
+      margin-bottom: 10px;
+      background-color: #FFFFFF;
+    }
+  </style>
+</head>
+
+<body>
+  <div style="text-align:center;padding:10px;">
+    <a href="#" onclick="dragUI.startDrag('dragitems','dragitem');return false;">启动拖动功能</a>
+    <a href="#" onclick="dragUI.stopDrag();return false;">关闭拖动功能</a>
+  </div>
+  <div id="root">
+    <div class="dragitems" id="dragitems1">
+      <div class="dragitem">
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tbody>
+            <tr>
+              <td height="30" colspan="3" bgcolor="#FFFFCC">　</td>
+            </tr>
+            <tr>
+              <td height="30">　</td>
+              <td height="30">1_1</td>
+              <td height="30">　</td>
+            </tr>
+            <tr>
+              <td height="30">　</td>
+              <td height="30">　</td>
+              <td height="30">　</td>
+            </tr>
+            <tr>
+              <td height="30">　</td>
+              <td height="30">　</td>
+              <td height="30">　</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="dragitem">
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td height="30" colspan="3" bgcolor="#FFFFCC">　</td>
+          </tr>
+          <tr>
+            <td height="30">　</td>
+            <td height="30">1_2</td>
+            <td height="30">　</td>
+          </tr>
+          <tr>
+            <td height="30">　</td>
+            <td height="30">　</td>
+            <td height="30">　</td>
+          </tr>
+          <tr>
+            <td height="30">　</td>
+            <td height="30">　</td>
+            <td height="30">　</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="dragitems" id="dragitems2">
+      <div class="dragitem">
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td height="30" colspan="3" bgcolor="#FFFFCC">　</td>
+          </tr>
+          <tr>
+            <td height="30">　</td>
+            <td height="30">2_1</td>
+            <td height="30">　</td>
+          </tr>
+          <tr>
+            <td height="30">　</td>
+            <td height="30"><input name="test" type="text" id="test" /></td>
+            <td height="30">　</td>
+          </tr>
+          <tr>
+            <td height="30">　</td>
+            <td height="30">　</td>
+            <td height="30">　</td>
+          </tr>
+        </table>
+      </div>
+      <div class="dragitem">
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td height="30" colspan="3" bgcolor="#FFFFCC">　</td>
+          </tr>
+          <tr>
+            <td height="30">　</td>
+            <td height="30">2_2</td>
+            <td height="30">　</td>
+          </tr>
+          <tr>
+            <td height="30">　</td>
+            <td height="30">　</td>
+            <td height="30">　</td>
+          </tr>
+          <tr>
+            <td height="30">　</td>
+            <td height="30">　</td>
+            <td height="30">　</td>
+          </tr>
+        </table>
+      </div>
+      <div class="dragitem">
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td height="30" colspan="3" bgcolor="#FFFFCC">　</td>
+          </tr>
+          <tr>
+            <td height="30">　</td>
+            <td height="30">　</td>
+            <td height="30">　</td>
+          </tr>
+          <tr>
+            <td height="30">　</td>
+            <td height="30">2_3</td>
+            <td height="30">　</td>
+          </tr>
+          <tr>
+            <td height="30">　</td>
+            <td height="30">　</td>
+            <td height="30">　</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="dragitems" id="dragitems3">
+      <div class="dragitem">
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td height="30" colspan="3" bgcolor="#FFFFCC">　</td>
+          </tr>
+          <tr>
+            <td height="30">　</td>
+            <td height="30">　</td>
+            <td height="30">　</td>
+          </tr>
+          <tr>
+            <td height="30">3_1</td>
+            <td height="30">　</td>
+            <td height="30">　</td>
+          </tr>
+          <tr>
+            <td height="30">　</td>
+            <td height="30">　</td>
+            <td height="30">　</td>
+          </tr>
+        </table>
+      </div>
+      <div class="dragitem">
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td height="30" colspan="3" bgcolor="#FFFFCC">　</td>
+          </tr>
+          <tr>
+            <td height="30">　</td>
+            <td height="30">　</td>
+            <td height="30">　</td>
+          </tr>
+          <tr>
+            <td height="30">　</td>
+            <td height="30">　</td>
+            <td height="30">　</td>
+          </tr>
+          <tr>
+            <td height="30">　</td>
+            <td height="30">　</td>
+            <td height="30">3_2</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

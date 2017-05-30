@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>test</title>
+</head>
+
+<body>
+    <span id="panel">span Panel</span>
+    <script type="text/javascript">
+        var rootNameSpace = {};
+
+        rootNameSpace.namespace = function (name) {
+            var parts = name.split('.');
+            var current = rootNameSpace;
+            for (var i in parts) {
+                if (!current[parts[i]]) {
+                    current[parts[i]] = {};
+                }
+                //这里地方这么写,是因为namespace的定义是层层上下级嵌套的
+                current = current[parts[i]];
+            }
+        };
+
+
+        rootNameSpace.namespace('event');
+        rootNameSpace.namespace('dom.style');
+
+        console.dir(rootNameSpace);
+    </script>
+</body>
+
+</html>
